@@ -1,4 +1,15 @@
-from typing import Iterable, Tuple, Sequence, Optional, Union, List, Set, TypeVar, Generic
+from typing import (
+    Any,
+    Iterable,
+    Tuple,
+    Sequence,
+    Optional,
+    Union,
+    List,
+    Set,
+    TypeVar,
+    Generic
+)
 
 
 # 1
@@ -58,5 +69,17 @@ class Test(Generic[X]):
 
 
 t = Test()  # type: Test[int]
-print(t.func_1(1))  # OK
-print(t.func_2('a'))  # mypy error incompatible type "str"; expected "int"
+# print(t.func_1(1))  # OK
+# print(t.func_2('a'))  # mypy error incompatible type "str"; expected "int"
+
+
+# 5
+Args = Tuple[Any, ...]
+
+
+def test5(args: Args):
+    return 123
+
+print(test5(1))  # error: Argument 1 to "test5" has incompatible type "int"; expected "Tuple[Any, ...]"
+print(test5((1, "kk")))
+
