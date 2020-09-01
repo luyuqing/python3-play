@@ -80,6 +80,8 @@ Args = Tuple[Any, ...]
 def test5(args: Args):
     return 123
 
-print(test5(1))  # error: Argument 1 to "test5" has incompatible type "int"; expected "Tuple[Any, ...]"
-print(test5((1, "kk")))
 
+print(test5(1))  # error: Argument 1 to "test5" has incompatible type "int"; expected "Tuple[Any, ...]"
+# mypy --show-error-codes test.py
+print(test5(1))  # type: ignore [arg-type]
+print(test5((1, "kk")))
