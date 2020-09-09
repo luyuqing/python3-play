@@ -9,3 +9,9 @@ def hashpw(password, rounds=10):
 
 
 print(hashpw("testingtestingtesting"))  # the password generated are different
+
+
+# my method on check password
+hashed = hashpw('mypassword').encode()
+bcrypt.checkpw('mypassword'.encode(), hashed)  # True
+bcrypt.checkpw('anotherpw'.encode(), hashed)  # False
