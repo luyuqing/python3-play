@@ -1,5 +1,6 @@
 from typing import (
     Any,
+    Dict,
     Iterable,
     Tuple,
     Sequence,
@@ -85,3 +86,11 @@ print(test5(1))  # error: Argument 1 to "test5" has incompatible type "int"; exp
 # mypy --show-error-codes test.py
 print(test5(1))  # type: ignore [arg-type]
 print(test5((1, "kk")))
+
+
+# 6
+def test_dict(x: Dict[str, list]):
+    return x
+
+
+test_dict({"a": 2})  # error: Dict entry 0 has incompatible type "str": "int"; expected "str": "List[Any]"
