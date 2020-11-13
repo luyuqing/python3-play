@@ -1,0 +1,45 @@
+[
+  {
+    "conversation_id": 1000012,
+    "metadata": {
+      "start_datetime": "2020-11-10T10:33:34.717287+01:00",
+      "end_datetime": "2020-11-10T10:33:40.223055+01:00",
+      "duration": "0:00:05.505768",
+      "filter_values": [
+        "test"
+      ],
+      "skill": null,
+      "escalated": false,
+      "wait_time": null,
+      "user_id": "Will be availabe probably on V11.04",
+      "language": [
+        "en-US"
+      ],
+      "source_url": "http://localhost/?code=KTPfS2hOKFuDE091-Z5PLYIJkbWFStU3eEBcjYLafGQkG7QKyk7gHTCCFkzYjFli7DxNlaIjVMfErm8N6G7qQw%3D%3D",
+      "device": "desktop"
+    }
+  },
+  {
+    "conversation_id": 1000009,
+    "metadata": {
+      "start_datetime": "2020-11-10T10:10:07.057153+01:00",
+      "end_datetime": "2020-11-10T10:14:52.048338+01:00",
+      "duration": "0:04:44.991185",
+      "filter_values": [
+        "test"
+      ],
+      "skill": {
+        "id": "skill_c",
+        "name": "Skill C"
+      },
+      "escalated": true,
+      "wait_time": "0:00:05.457777",
+      "user_id": "Will be availabe probably on V11.04",
+      "language": [
+        "en-US"
+      ],
+      "source_url": "http://localhost/",
+      "device": "desktop"
+    }
+  }
+]

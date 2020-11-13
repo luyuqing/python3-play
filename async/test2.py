@@ -1,35 +1,17 @@
-import requests
+import asyncio
 import time
-import concurrent.futures
-import threading
 
 
-thread_local = threading.local()
+async def say_after(delay, what):
+    await asyncio.sleep(delay)
+    print(what)
 
 
-def get_session():
-    if not hasattr(thread_local, 'session'):
-        thread_local.session = requests.Session()
-    return thread_local.session
+async def main():
+    print(f"started at {time.strftime('%X')}")
+    await say_after(1, 'hello')
+    await say_after(2, 'world')
+    print(f"finished at {time.strftime('%X')}")
 
 
-def download_site(url):
-    session = get_session()
-    with session.get(url) as response:
-        print("Done reading {}, length of content is {}".format(url, len(response.content)))
-
-
-def download_all_sites(sites):
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
-        executor.map(download_site, sites)
-
-
-if __name__ == "__main__":
-    sites = [
-        "https://www.jython.org/",
-        "https://requests.readthedocs.io/en/master/user/advanced/"
-    ] * 50
-    start = time.time()
-    download_all_sites(sites)
-    duration = time.time() - start
-    print("Duration is {} seconds".format(duration))
+asyncio.run(main())

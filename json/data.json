@@ -1,0 +1,961 @@
+[
+    {
+        "type": "query_info",
+        "interpreted_query_range": [
+            "2020-11-10T10:10:00+01:00",
+            "2020-11-10T16:00:00+01:00"
+        ],
+        "current_time": "2020-11-10T11:25:12.392001+01:00",
+        "query_seconds": 0.0009236335754394531,
+        "query": {
+            "from": "2020-11-10T10:10:00",
+            "to": "2020-11-10T16:00:00"
+        },
+        "conversations": 2
+    },
+    {
+        "type": "conversation",
+        "id": 1000012,
+        "reference": "b6bf43e161d9b5d98f4bd674a245b8a9",
+        "environment": "live",
+        "time": {
+            "created": "2020-11-10T10:33:34.436435+01:00",
+            "last_message_created": "2020-11-10T10:33:40.223055+01:00"
+        },
+        "reviewed": false,
+        "messages": [
+            {
+                "id": 1000069,
+                "time": "2020-11-10T10:33:34.717287+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3002,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "system_action_trigger": "welcome_action",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>Hi!</p>",
+                        "time": "2020-11-10T10:33:34.718804+01:00"
+                    },
+                    {
+                        "type": "text",
+                        "text": "<p>What can I help you with?</p>",
+                        "time": "2020-11-10T10:33:34.719905+01:00"
+                    }
+                ]
+            },
+            {
+                "id": 1000070,
+                "time": "2020-11-10T10:33:40.210924+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "question",
+                "question": {
+                    "type": "question_analysis",
+                    "input": "am i authenticated",
+                    "predicted_language": "en-US",
+                    "sentiment": "neutral",
+                    "labels": [
+                        "Perfect Match"
+                    ],
+                    "analysis": [
+                        {
+                            "processed": "are myself confirm",
+                            "translated": "are myself confirm",
+                            "winner": true,
+                            "intent": {
+                                "type": "intent",
+                                "id": 1036,
+                                "title": "Am I authenticated",
+                                "inherit_skill": true,
+                                "parent": {
+                                    "type": "intent",
+                                    "id": 1035,
+                                    "title": "Authentication",
+                                    "inherit_skill": true
+                                }
+                            }
+                        }
+                    ],
+                    "important_words": [
+                        "confirm",
+                        "myself"
+                    ]
+                },
+                "source_url": "http://localhost/?code=KTPfS2hOKFuDE091-Z5PLYIJkbWFStU3eEBcjYLafGQkG7QKyk7gHTCCFkzYjFli7DxNlaIjVMfErm8N6G7qQw%3D%3D",
+                "device": "desktop",
+                "intents": {
+                    "predicted": {
+                        "type": "intent",
+                        "id": 1036,
+                        "title": "Am I authenticated",
+                        "inherit_skill": true,
+                        "parent": {
+                            "type": "intent",
+                            "id": 1035,
+                            "title": "Authentication",
+                            "inherit_skill": true
+                        }
+                    }
+                }
+            },
+            {
+                "id": 1000071,
+                "time": "2020-11-10T10:33:40.223055+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3180,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "intents": {
+                    "came_from": {
+                        "type": "intent",
+                        "id": 1036,
+                        "title": "Am I authenticated",
+                        "inherit_skill": true,
+                        "parent": {
+                            "type": "intent",
+                            "id": 1035,
+                            "title": "Authentication",
+                            "inherit_skill": true
+                        }
+                    }
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>Yes.</p>",
+                        "time": "2020-11-10T10:33:40.224736+01:00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "conversation",
+        "id": 1000009,
+        "reference": "dc8531e639603540e79b35ecc4ea1e9e",
+        "environment": "live",
+        "time": {
+            "created": "2020-11-10T10:10:07.030337+01:00",
+            "last_message_created": "2020-11-10T10:14:52.048338+01:00"
+        },
+        "reviewed": false,
+        "messages": [
+            {
+                "id": 1000050,
+                "time": "2020-11-10T10:10:07.057153+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3002,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "system_action_trigger": "welcome_action",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>Hi!</p>",
+                        "time": "2020-11-10T10:10:07.059868+01:00"
+                    },
+                    {
+                        "type": "text",
+                        "text": "<p>What can I help you with?</p>",
+                        "time": "2020-11-10T10:10:07.06146+01:00"
+                    }
+                ]
+            },
+            {
+                "id": 1000051,
+                "time": "2020-11-10T10:10:12.047413+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "question",
+                "question": {
+                    "type": "question_analysis",
+                    "input": "show me skill a",
+                    "predicted_language": "en-US",
+                    "sentiment": "neutral",
+                    "labels": [
+                        "Perfect Match"
+                    ],
+                    "analysis": [
+                        {
+                            "processed": "show myself knowledg",
+                            "translated": "show myself knowledg",
+                            "winner": true,
+                            "intent": {
+                                "type": "intent",
+                                "id": 1039,
+                                "title": "Skills",
+                                "inherit_skill": false,
+                                "skill": {
+                                    "id": "skill_a",
+                                    "name": "Skill A"
+                                }
+                            }
+                        }
+                    ],
+                    "important_words": [
+                        "knowledg"
+                    ]
+                },
+                "source_url": "http://localhost/",
+                "device": "desktop",
+                "intents": {
+                    "predicted": {
+                        "type": "intent",
+                        "id": 1039,
+                        "title": "Skills",
+                        "inherit_skill": false,
+                        "skill": {
+                            "id": "skill_a",
+                            "name": "Skill A"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 1000052,
+                "time": "2020-11-10T10:10:12.056635+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3186,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_a",
+                    "name": "Skill A"
+                },
+                "intents": {
+                    "came_from": {
+                        "type": "intent",
+                        "id": 1039,
+                        "title": "Skills",
+                        "inherit_skill": false,
+                        "skill": {
+                            "id": "skill_a",
+                            "name": "Skill A"
+                        }
+                    }
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>This intent has Skill A.</p>",
+                        "time": "2020-11-10T10:10:12.058127+01:00"
+                    },
+                    {
+                        "type": "link",
+                        "time": "2020-11-10T10:10:12.059106+01:00",
+                        "buttons": [
+                            {
+                                "type": "button",
+                                "id": 18,
+                                "button_type": "action",
+                                "text": "Go to Skill B"
+                            },
+                            {
+                                "type": "button",
+                                "id": 19,
+                                "button_type": "action",
+                                "text": "Go to Skill C"
+                            },
+                            {
+                                "type": "button",
+                                "id": 20,
+                                "button_type": "action",
+                                "text": "Inherit Skill A"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 1000053,
+                "time": "2020-11-10T10:10:16.725542+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "button_clicked": {
+                    "type": "button",
+                    "id": 19,
+                    "button_type": "action",
+                    "hidden": false,
+                    "text": "Go to Skill C"
+                },
+                "actions": {
+                    "came_from": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3186,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    },
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3188,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "intents": {
+                    "came_from": {
+                        "type": "intent",
+                        "id": 1039,
+                        "title": "Skills",
+                        "inherit_skill": false,
+                        "skill": {
+                            "id": "skill_a",
+                            "name": "Skill A"
+                        }
+                    }
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>This intent has Skill C.</p>",
+                        "time": "2020-11-10T10:10:16.730567+01:00"
+                    },
+                    {
+                        "type": "link",
+                        "time": "2020-11-10T10:10:16.73348+01:00",
+                        "buttons": [
+                            {
+                                "type": "button",
+                                "id": 21,
+                                "button_type": "action",
+                                "text": "Inherit Skill C"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 1000054,
+                "time": "2020-11-10T10:10:22.206570+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "question",
+                "question": {
+                    "type": "question_analysis",
+                    "input": "what is the time",
+                    "predicted_language": "en-US",
+                    "sentiment": "neutral",
+                    "labels": [
+                        "Perfect Match"
+                    ],
+                    "analysis": [
+                        {
+                            "processed": "what are time",
+                            "translated": "what are time",
+                            "winner": true,
+                            "intent": {
+                                "type": "intent",
+                                "id": 1032,
+                                "title": "What is the time (external)",
+                                "inherit_skill": true,
+                                "parent": {
+                                    "type": "intent",
+                                    "id": 1030,
+                                    "title": "Api connector",
+                                    "inherit_skill": true
+                                }
+                            }
+                        }
+                    ],
+                    "important_words": [
+                        "time"
+                    ]
+                },
+                "source_url": "http://localhost/",
+                "device": "desktop",
+                "intents": {
+                    "predicted": {
+                        "type": "intent",
+                        "id": 1032,
+                        "title": "What is the time (external)",
+                        "inherit_skill": true,
+                        "parent": {
+                            "type": "intent",
+                            "id": 1030,
+                            "title": "Api connector",
+                            "inherit_skill": true
+                        }
+                    }
+                }
+            },
+            {
+                "id": 1000055,
+                "time": "2020-11-10T10:10:22.215959+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3009,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "system_action_trigger": "login_required",
+                "intents": {
+                    "came_from": {
+                        "type": "intent",
+                        "id": 1032,
+                        "title": "What is the time (external)",
+                        "inherit_skill": true,
+                        "parent": {
+                            "type": "intent",
+                            "id": 1030,
+                            "title": "Api connector",
+                            "inherit_skill": true
+                        }
+                    }
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>Please log in first.</p>",
+                        "time": "2020-11-10T10:10:22.21758+01:00"
+                    },
+                    {
+                        "type": "link",
+                        "time": "2020-11-10T10:10:22.21865+01:00",
+                        "buttons": [
+                            {
+                                "type": "button",
+                                "id": 22,
+                                "button_type": "url",
+                                "text": "Login",
+                                "url": "http://localhost/openid_server/authorize?scope=openid&client_id=boost&redirect_uri=http://localhost/api/auth/openid/authorize&response_type=code&state=203129f96f181751d94b401025f2efd32e1fa7497aeb70170f79dd6a91fd4a828081a82ffb9fef7979df736c02851e45f5d0e07306ea25b95136d7d46999356e__STATE_SEPARATOR__dmRm2YRknUCn2OUKg-zc8El5u9dw5w9_LDJ0p2999E1xFTUIi_4IwwZyrBYDmA4wNrWeb-v6a-N6f7A1q2TEm7sNhYQpt8F5JKsF6ahkH6G3kjy9lmNd-UbdN3mO2RXvX9P4WwKRaItfywvzMGHtLW_kjZfPNviu_o4wDJy7Ddws-ZFv-oJVzo1vbVwFgyO2dUPRXmvhzB9oeiD2n3YvmQ==__STATE_SEPARATOR__RkyStQCjpRnb1Q86OI_SYg=="
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 1000056,
+                "time": "2020-11-10T10:10:26.938567+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "button_clicked": {
+                    "type": "button",
+                    "id": 22,
+                    "button_type": "url",
+                    "hidden": false,
+                    "text": "Login",
+                    "url": "http://localhost/openid_server/authorize?scope=openid&client_id=boost&redirect_uri=http://localhost/api/auth/openid/authorize&response_type=code&state=203129f96f181751d94b401025f2efd32e1fa7497aeb70170f79dd6a91fd4a828081a82ffb9fef7979df736c02851e45f5d0e07306ea25b95136d7d46999356e__STATE_SEPARATOR__dmRm2YRknUCn2OUKg-zc8El5u9dw5w9_LDJ0p2999E1xFTUIi_4IwwZyrBYDmA4wNrWeb-v6a-N6f7A1q2TEm7sNhYQpt8F5JKsF6ahkH6G3kjy9lmNd-UbdN3mO2RXvX9P4WwKRaItfywvzMGHtLW_kjZfPNviu_o4wDJy7Ddws-ZFv-oJVzo1vbVwFgyO2dUPRXmvhzB9oeiD2n3YvmQ==__STATE_SEPARATOR__RkyStQCjpRnb1Q86OI_SYg=="
+                },
+                "actions": {
+                    "came_from": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3009,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                }
+            },
+            {
+                "id": 1000057,
+                "time": "2020-11-10T10:10:30.867463+01:00",
+                "is_human_chat": false,
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3173,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>The current time is 10:10 AM.</p>",
+                        "time": "2020-11-10T10:10:30.872511+01:00"
+                    }
+                ]
+            },
+            {
+                "id": 1000058,
+                "time": "2020-11-10T10:14:24.283674+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "question",
+                "question": {
+                    "type": "question_analysis",
+                    "input": "a simple reply",
+                    "predicted_language": "en-US",
+                    "sentiment": "neutral",
+                    "labels": [
+                        "Perfect Match"
+                    ],
+                    "analysis": [
+                        {
+                            "processed": "easi answer",
+                            "translated": "easi answer",
+                            "winner": true,
+                            "intent": {
+                                "type": "intent",
+                                "id": 1018,
+                                "title": "Simple reply",
+                                "inherit_skill": true,
+                                "parent": {
+                                    "type": "intent",
+                                    "id": 1014,
+                                    "title": "All content",
+                                    "inherit_skill": true
+                                }
+                            }
+                        }
+                    ],
+                    "important_words": [
+                        "answer",
+                        "easi"
+                    ]
+                },
+                "source_url": "http://localhost/?code=dmzP1uKBHf_jYV4779_S9FHzaRoIoZ0VmxWTmI9HaZMMGlgKg1wYSsywGNDvSJYKlYZqTe7spVp7__vvunqKWA%3D%3D",
+                "device": "desktop",
+                "intents": {
+                    "predicted": {
+                        "type": "intent",
+                        "id": 1018,
+                        "title": "Simple reply",
+                        "inherit_skill": true,
+                        "parent": {
+                            "type": "intent",
+                            "id": 1014,
+                            "title": "All content",
+                            "inherit_skill": true
+                        }
+                    }
+                }
+            },
+            {
+                "id": 1000059,
+                "time": "2020-11-10T10:14:24.296483+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3098,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "intents": {
+                    "came_from": {
+                        "type": "intent",
+                        "id": 1018,
+                        "title": "Simple reply",
+                        "inherit_skill": true,
+                        "parent": {
+                            "type": "intent",
+                            "id": 1014,
+                            "title": "All content",
+                            "inherit_skill": true
+                        }
+                    }
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>A simple reply.</p>",
+                        "time": "2020-11-10T10:14:24.298784+01:00"
+                    }
+                ]
+            },
+            {
+                "id": 1000060,
+                "time": "2020-11-10T10:14:30.103296+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "question",
+                "question": {
+                    "type": "question_analysis",
+                    "input": "another reply",
+                    "predicted_language": "en-US",
+                    "sentiment": "neutral",
+                    "labels": [
+                        "Unknown"
+                    ],
+                    "analysis": [
+                        {
+                            "processed": "other answer",
+                            "translated": "other answer",
+                            "winner": false
+                        }
+                    ],
+                    "important_words": [
+                        "answer",
+                        "other"
+                    ]
+                },
+                "source_url": "http://localhost/?code=dmzP1uKBHf_jYV4779_S9FHzaRoIoZ0VmxWTmI9HaZMMGlgKg1wYSsywGNDvSJYKlYZqTe7spVp7__vvunqKWA%3D%3D",
+                "device": "desktop",
+                "intents": {
+                    "predicted": {
+                        "type": "intent",
+                        "id": 2,
+                        "title": "unknown",
+                        "inherit_skill": true
+                    }
+                }
+            },
+            {
+                "id": 1000061,
+                "time": "2020-11-10T10:14:30.114694+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3000,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "system_action_trigger": "unknown",
+                "intents": {
+                    "came_from": {
+                        "type": "intent",
+                        "id": 2,
+                        "title": "unknown",
+                        "inherit_skill": true
+                    }
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>Can you rephrase that? I didn't understand your question.</p>",
+                        "time": "2020-11-10T10:14:30.11676+01:00"
+                    }
+                ]
+            },
+            {
+                "id": 1000062,
+                "time": "2020-11-10T10:14:35.794537+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "question",
+                "question": {
+                    "type": "question_analysis",
+                    "input": "speak with human",
+                    "predicted_language": "en-US",
+                    "sentiment": "neutral",
+                    "labels": [
+                        "Perfect Match"
+                    ],
+                    "analysis": [
+                        {
+                            "processed": "talk with person",
+                            "translated": "talk with person",
+                            "winner": true,
+                            "intent": {
+                                "type": "intent",
+                                "id": 1038,
+                                "title": "Speak with a human",
+                                "inherit_skill": true
+                            }
+                        }
+                    ],
+                    "important_words": [
+                        "person",
+                        "with"
+                    ]
+                },
+                "source_url": "http://localhost/?code=dmzP1uKBHf_jYV4779_S9FHzaRoIoZ0VmxWTmI9HaZMMGlgKg1wYSsywGNDvSJYKlYZqTe7spVp7__vvunqKWA%3D%3D",
+                "device": "desktop",
+                "intents": {
+                    "predicted": {
+                        "type": "intent",
+                        "id": 1038,
+                        "title": "Speak with a human",
+                        "inherit_skill": true
+                    }
+                }
+            },
+            {
+                "id": 1000063,
+                "time": "2020-11-10T10:14:35.802747+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3184,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "intents": {
+                    "came_from": {
+                        "type": "intent",
+                        "id": 1038,
+                        "title": "Speak with a human",
+                        "inherit_skill": true
+                    }
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>Do you want to speak with a human?</p>",
+                        "time": "2020-11-10T10:14:35.804033+01:00"
+                    },
+                    {
+                        "type": "link",
+                        "time": "2020-11-10T10:14:35.804964+01:00",
+                        "buttons": [
+                            {
+                                "type": "button",
+                                "id": 23,
+                                "button_type": "action",
+                                "text": "Yes"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 1000064,
+                "time": "2020-11-10T10:14:40.723618+01:00",
+                "is_human_chat": true,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "is_human_agent": false,
+                "button_clicked": {
+                    "type": "button",
+                    "id": 23,
+                    "button_type": "action",
+                    "hidden": false,
+                    "text": "Yes"
+                },
+                "actions": {
+                    "came_from": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3184,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    },
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3185,
+                        "language": "en-US",
+                        "transfer_to_human": true
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "intents": {
+                    "came_from": {
+                        "type": "intent",
+                        "id": 1038,
+                        "title": "Speak with a human",
+                        "inherit_skill": true
+                    }
+                },
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>You are now in the queue.</p>",
+                        "time": "2020-11-10T10:14:40.725263+01:00"
+                    },
+                    {
+                        "type": "text",
+                        "text": "<p>My colleague will be with you shortly.</p>",
+                        "time": "2020-11-10T10:14:40.726392+01:00"
+                    }
+                ]
+            },
+            {
+                "id": 1000065,
+                "time": "2020-11-10T10:14:41.355158+01:00",
+                "is_human_chat": true,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "is_human_agent": false,
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3016,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "system_action_trigger": "human_chat_queue_update",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>You are currently number 1 in the queue.</p>",
+                        "time": "2020-11-10T10:14:41.356526+01:00"
+                    }
+                ]
+            },
+            {
+                "id": 1000066,
+                "time": "2020-11-10T10:14:46.181395+01:00",
+                "is_human_chat": true,
+                "type": "answer",
+                "is_human_agent": true,
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "haha",
+                        "time": "2020-11-10T10:14:46.181395+01:00"
+                    }
+                ]
+            },
+            {
+                "id": 1000067,
+                "time": "2020-11-10T10:14:52.048338+01:00",
+                "is_human_chat": false,
+                "sent_filter_values": [
+                    "test"
+                ],
+                "type": "answer",
+                "actions": {
+                    "displayed": {
+                        "type": "action",
+                        "action_type": "content",
+                        "id": 3007,
+                        "language": "en-US",
+                        "transfer_to_human": false
+                    }
+                },
+                "skill": {
+                    "id": "skill_c",
+                    "name": "Skill C"
+                },
+                "system_action_trigger": "customer_support_conversation_end",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "<p>Thank you for chatting with us at customer support!</p>",
+                        "time": "2020-11-10T10:14:52.049992+01:00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "post_query_info",
+        "query_seconds": 0.01183176040649414,
+        "total_seconds": 0.7969906330108643,
+        "serialization_seconds": 0.796990156173706,
+        "secs/conversation": 0.398495078086853,
+        "conversations/sec": 2.5094412829411343,
+        "conversations": 2
+    }
+]
