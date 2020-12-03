@@ -2,11 +2,20 @@ from contextlib import contextmanager
 
 
 @contextmanager
-def testcon():
-    print("111")
-    yield
-    print("222")
+def con(*args, **kwargs):
+    a = 0
+    for x in args:
+        a += x
+    for _, v in kwargs.items():
+        a += v**2
+        
+    try:
+        print(a)
+        yield
+    finally:
+        a = 0
+        print(a)
 
 
-with testcon():
-    pass
+with con(1, 2, m=3):
+    print("here")
