@@ -18,8 +18,9 @@ class BookStore(Resource):
         return jsonify(books)
 
     def post(self):
-        print("###############################")
+        print("POST ##############################################################")
         print(request.json)
+        print(request.headers)
         book_name = request.json.get('book_name')
         for book in books:
             if book['book_name'] == book_name:
